@@ -3,11 +3,14 @@ import { getMovies } from '../../movies-api';
 import { ColorRing } from 'react-loader-spinner';
 import ErrorMsg from '../../components/ErrorMsg/ErrorMsg';
 import MovieList from '../../components/MovieList/MovieList';
+import { useLocation } from 'react-router-dom';
 
 export default function HomePage() {
   const [loader, setLoader] = useState(false);
   const [error, setError] = useState(false);
   const [popularMovies, setPopularMovies] = useState([]);
+
+  const location = useLocation();
 
   useEffect(() => {
     async function getPopularMovies() {
@@ -27,7 +30,7 @@ export default function HomePage() {
 
   return (
     <>
-      <MovieList popularMovies={popularMovies} />
+      <MovieList popularMovies={popularMovies} location={location} />
       {loader && (
         <ColorRing
           visible={true}
