@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { Suspense, useEffect, useRef, useState } from 'react';
 import { Link, Outlet, useLocation, useParams } from 'react-router-dom';
 import getMoviesById from '../movies-details-api';
 import css from './MovieDetailsPage.module.css';
@@ -85,7 +85,10 @@ export default function MovieDetailsPage() {
         />
       )}
       {error && <ErrorMsg />}
-      <Outlet />
+
+      <Suspense fallback={null}>
+        <Outlet />
+      </Suspense>
     </>
   );
 }
