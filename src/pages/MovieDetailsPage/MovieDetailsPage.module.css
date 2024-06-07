@@ -1,0 +1,27 @@
+.goBackLink {
+  border: 1px solid rgb(108, 44, 169);
+  padding: 2px 6px;
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px grey;
+}
+
+.movieInfo {
+  height: 300px;
+  display: flex;
+  margin-top: 10px;
+}
+
+.moviePoster {
+  min-width: 200px;
+  margin-right: 12px;
+  flex-shrink: 1;
+}
+
+.movieAdditionalInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.movieAdditionalInfoItem {
+  color: rgb(85, 26, 139);
+}

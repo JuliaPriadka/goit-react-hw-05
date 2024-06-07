@@ -1,0 +1,20 @@
+.navigation {
+  display: flex;
+  gap: 12px;
+  border: 1px solid gray;
+  box-shadow: 10px 5px 5px grey;
+  margin-bottom: 12px;
+  padding: 6px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.isActive {
+  color: red;
+}

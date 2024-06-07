@@ -1,0 +1,9 @@
+.popularMoviesLink {
+  color: black;
+}
+
+.popularMovies {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}

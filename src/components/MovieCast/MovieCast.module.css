@@ -1,0 +1,20 @@
+.actorsList {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.actorsListItem {
+  list-style-type: none;
+  width: 250px;
+}
+
+.actor {
+  width: 60px;
+}
+
+.accent {
+  color: rgb(85, 26, 139);
+  font-weight: 600px;
+}

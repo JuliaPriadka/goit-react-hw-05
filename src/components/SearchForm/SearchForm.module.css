@@ -1,0 +1,27 @@
+.search {
+  display: flex;
+  gap: 16px;
+}
+
+.searchInput {
+  width: 400px;
+  height: 36px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+  outline: none;
+}
+
+.button {
+  width: 100px;
+  height: 36px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(85, 26, 139);
+  color: rgb(255, 0, 0);
+}
+
+.button:hover {
+  background-color: rgb(152, 68, 236);
+}
